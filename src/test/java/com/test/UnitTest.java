@@ -1,4 +1,4 @@
-package com.test;
+﻿package com.test;
 
 import com.example.Demo1;
 import org.junit.Assert;
@@ -15,7 +15,7 @@ public class UnitTest {
         int a = new Random().nextInt(1000);
         int b = new Random().nextInt(2000);
 
-        int c = a + b;
+        int c = a + b + 2;
         int r = new Demo1().intAdd(a, b);
         Assert.assertTrue("检查intAdd(a, b)函数返回值是否正确", c == r);
     }
