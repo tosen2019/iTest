@@ -17,7 +17,7 @@ public class UnitTest {
 
         int c = a + b +2;
         int r = new Demo1().intAdd(a, b);
-        Assert.assertTrue("检查intAdd(a, b)函数返回值是否正确", c == r);
+        Assert.assertTrue(c == r);
     }
 
     @Test
@@ -27,7 +27,7 @@ public class UnitTest {
 
         int c = a - b;
         int r = new Demo1().intSubtract(a, b);
-        Assert.assertTrue("檢查intSubtract(a, b)函数返回值是否正确", c == r);
+        Assert.assertTrue(c == r);
     }
 
     @Test
@@ -37,7 +37,7 @@ public class UnitTest {
 
         int c = a - b;
         int r = new Demo1().intSubtract2(a, b);
-        Assert.assertTrue("檢查intSubtract2(a, b)函数返回值是否正确", c == r);
+        Assert.assertTrue(c == r);
     }
 
     @Test
@@ -47,12 +47,12 @@ public class UnitTest {
 
         long c = a * b;
         long r = new Demo1().intMultiply(a, b);
-        Assert.assertTrue("檢查intMultiply(a, b)函数返回值是否正确", c == r);
+        Assert.assertTrue(c == r);
     }
 
     @Test
     public void testStringLeng() throws Exception{
         int lenResult = new Demo1().countlength("12345678901");
-        Assert.assertFalse("Test leng", lenResult == 11);
+        Assert.assertFalse(lenResult == 11);
     }
 }
